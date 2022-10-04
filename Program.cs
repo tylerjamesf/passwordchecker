@@ -43,6 +43,28 @@ namespace PasswordChecker
 
       Console.WriteLine(score);
 
+      switch (score)
+      {
+        case 5: 
+          Console.WriteLine("extremely strong");
+          break;
+        case 4: 
+          Console.WriteLine("extremely strong");
+          break;
+        case 3:
+          Console.WriteLine("strong");
+          break;
+        case 2:
+          Console.WriteLine("medium");
+          break;
+        case 1:
+          Console.WriteLine("weak");
+          break;
+        default:
+          Console.WriteLine("does not meet any criteria");
+          break;
+      }
+
 
     }
   }
